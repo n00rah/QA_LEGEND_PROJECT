@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automationCore.Base;
+import constants.Constants;
+import constants.Messages;
 import listener.RetryAnalyzer;
 import page_object.AddUserPage;
 import page_object.HomePage;
@@ -20,14 +22,14 @@ public class AddUserPageTest extends Base
 		String prefix=RandomDataUtility.getPrefix();
 		String firstName=RandomDataUtility.getFirstName();
 		String lastName=RandomDataUtility.getLastName();
-		String emailId=firstName+lastName+"@gmail.com";
+		String emailId=firstName+lastName+Messages.MAIL_EXTENSION;
 		String actualemailId=emailId;
-		String userName=firstName+"00"+lastName;
-		String password=firstName+"11"+lastName;
+		String userName=firstName+Messages.USERNAME_EXTENSION+lastName;
+		String password=firstName+Messages.PASSWORD_EXTENSION+lastName;
 		
 		LoginPage login=new LoginPage(driver);
-		login.enterUserName(ExcelUtility.getStringData(1,0,"LoginPage"));
-		login.enterPassWord(ExcelUtility.getIntegerData(1,1,"LoginPage"));
+		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
+		login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.LOGIN_PAGE));
 		login.clickOnLoginButton();
 		HomePage home=new HomePage(driver);
 		home.clickOnEndTourButton();
@@ -48,7 +50,7 @@ public class AddUserPageTest extends Base
 		adduser.clickOnSaveButton();
 		users.enterSearchData(emailId);
 		String expectedemailId=users.getSearchResultText();
-		Assert.assertEquals(actualemailId, expectedemailId,"ADDING NEW USER FAILED");
+		Assert.assertEquals(actualemailId, expectedemailId,Messages.NEWUSER_ADDFAILED);
 				
 	}
 	@Test(retryAnalyzer=RetryAnalyzer.class)
@@ -58,14 +60,14 @@ public class AddUserPageTest extends Base
 		String prefix=RandomDataUtility.getPrefix();
 		String firstName=RandomDataUtility.getFirstName();
 		String lastName=RandomDataUtility.getLastName();
-		String emailId=firstName+lastName+"@gmail.com";
+		String emailId=firstName+lastName+Messages.MAIL_EXTENSION;
 		String actualemailId=emailId;
-		String userName=firstName+"00"+lastName;
-		String password=firstName+"11"+lastName;
+		String userName=firstName+Messages.USERNAME_EXTENSION+lastName;
+		String password=firstName+Messages.PASSWORD_EXTENSION+lastName;
 		
 		LoginPage login=new LoginPage(driver);
-		login.enterUserName(ExcelUtility.getStringData(1,0,"LoginPage"));
-		login.enterPassWord(ExcelUtility.getIntegerData(1,1,"LoginPage"));
+		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
+		login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.LOGIN_PAGE));
 		login.clickOnLoginButton();
 		HomePage home=new HomePage(driver);
 		home.clickOnEndTourButton();
@@ -95,8 +97,8 @@ public class AddUserPageTest extends Base
 		login.clickOnLoginButton();
 		
 		String actualtext=home.getUserNameText();
-		String expectedtext=firstName+" "+lastName;
-		Assert.assertEquals(actualtext,expectedtext,"NEWLY ADDED USER LOGIN FAILED");
+		String expectedtext=firstName+Messages.INSERT_SPACE+lastName;
+		Assert.assertEquals(actualtext,expectedtext,Messages.NEWUSER_LOGINFAILED);
 				
 	}
 

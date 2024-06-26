@@ -88,6 +88,14 @@ public class AddUserPage
 	{
 		saveButton.click();
 	}
+	public void clearSalesCommisiionField()
+	{
+		salesCommisionField.clear();
+	}
+	public void enterNewSalesCommissionPercentage()
+	{
+		salesCommisionField.sendKeys(ExcelUtility.getIntegerData(1,3,"UsersPage"));
+	}
 	
 
 }

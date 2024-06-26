@@ -1,6 +1,7 @@
 package automationCore;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -46,20 +47,20 @@ public class Base
 	{
 		initialiseBrowser("Chrome");
 	}
-/*	@AfterMethod
+@AfterMethod
 	public void closeBrowser(ITestResult result) throws IOException
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			takeScreenShot(result);
 		}
-		driver.close();
+		//driver.close();
 	}
 	public void takeScreenShot(ITestResult result) throws IOException
 	{
 		TakesScreenshot takescreenshot=(TakesScreenshot)driver;
 		File screenshot=takescreenshot.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot,new File("./Screenshot/"+result.getName()+".png"));
-	}*/
+	}
 
 }
