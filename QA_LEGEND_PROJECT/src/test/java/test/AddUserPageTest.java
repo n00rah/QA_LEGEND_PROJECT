@@ -22,10 +22,10 @@ public class AddUserPageTest extends Base
 		String prefix=RandomDataUtility.getPrefix();
 		String firstName=RandomDataUtility.getFirstName();
 		String lastName=RandomDataUtility.getLastName();
-		String emailId=firstName+lastName+Messages.MAIL_EXTENSION;
+		String emailId=firstName+lastName+Constants.MAIL_EXTENSION;
 		String actualemailId=emailId;
-		String userName=firstName+Messages.USERNAME_EXTENSION+lastName;
-		String password=firstName+Messages.PASSWORD_EXTENSION+lastName;
+		String userName=firstName+Constants.USERNAME_EXTENSION+lastName;
+		String password=firstName+Constants.PASSWORD_EXTENSION+lastName;
 		
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
@@ -60,10 +60,10 @@ public class AddUserPageTest extends Base
 		String prefix=RandomDataUtility.getPrefix();
 		String firstName=RandomDataUtility.getFirstName();
 		String lastName=RandomDataUtility.getLastName();
-		String emailId=firstName+lastName+Messages.MAIL_EXTENSION;
+		String emailId=firstName+lastName+Constants.MAIL_EXTENSION;
 		String actualemailId=emailId;
-		String userName=firstName+Messages.USERNAME_EXTENSION+lastName;
-		String password=firstName+Messages.PASSWORD_EXTENSION+lastName;
+		String userName=firstName+Constants.USERNAME_EXTENSION+lastName;
+		String password=firstName+Constants.PASSWORD_EXTENSION+lastName;
 		
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
@@ -97,7 +97,7 @@ public class AddUserPageTest extends Base
 		login.clickOnLoginButton();
 		
 		String actualtext=home.getUserNameText();
-		String expectedtext=firstName+Messages.INSERT_SPACE+lastName;
+		String expectedtext=firstName+Constants.INSERT_SPACE+lastName;
 		Assert.assertEquals(actualtext,expectedtext,Messages.NEWUSER_LOGINFAILED);
 				
 	}

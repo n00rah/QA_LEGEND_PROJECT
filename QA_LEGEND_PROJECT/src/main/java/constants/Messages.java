@@ -15,10 +15,6 @@ public class Messages
 	public static final String FAILED_VIEW="CANNOT VIEW AT THIS MOMENT";
 	public static final String FAILED_EDIT="CANNOT EDIT AT THIS MOMENT";
 	public static final String FAILED_DELETE="CANNOT DELETE AT THIS MOMENT";
-	public static final String MAIL_EXTENSION="@gmail.com";
-	public static final String USERNAME_EXTENSION="00";
-	public static final String PASSWORD_EXTENSION="11";
-	public static final String INSERT_SPACE=" ";
 	public static final String NEWUSER_LOGINFAILED="NEWLY ADDED USER LOGIN FAILED";
 	public static final String NEWUSER_ADDFAILED="ADDING NEW USER FAILED";
 	

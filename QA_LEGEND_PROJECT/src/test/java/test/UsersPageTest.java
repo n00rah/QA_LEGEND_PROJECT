@@ -59,10 +59,10 @@ public class UsersPageTest extends Base
 		String prefix=RandomDataUtility.getPrefix();
 		String firstName=RandomDataUtility.getFirstName();
 		String lastName=RandomDataUtility.getLastName();
-		String emailid=firstName+lastName+Messages.MAIL_EXTENSION;
+		String emailid=firstName+lastName+Constants.MAIL_EXTENSION;
 		String actualEmailId=emailid;
-		String userName=firstName+Messages.USERNAME_EXTENSION+lastName;
-		String password=firstName+Messages.PASSWORD_EXTENSION+lastName;
+		String userName=firstName+Constants.USERNAME_EXTENSION+lastName;
+		String password=firstName+Constants.PASSWORD_EXTENSION+lastName;
 		
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.ADDUSER_PAGE));
