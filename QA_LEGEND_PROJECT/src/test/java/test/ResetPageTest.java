@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class ResetPageTest extends Base
 {
-	@Test
+	@Test(groups="Sanity")
 	public void verifyResetPageTitle()
 	{
 		LoginPage login=new LoginPage(driver);
@@ -24,7 +24,7 @@ public class ResetPageTest extends Base
 		Assert.assertEquals(actualtitle, expectedtitle,Messages.RESET_TITLE_MISMATCH);
 		
 	}
-	@Test
+	@Test(groups="Smoke")
 	
 	public void verifyErrorMessageWithInvalidEmailId()
 	{
