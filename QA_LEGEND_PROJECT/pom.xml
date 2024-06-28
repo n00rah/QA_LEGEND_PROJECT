@@ -41,10 +41,10 @@
     <artifactId>javafaker</artifactId>
     <version>1.0.2</version>
 </dependency>
-   	<dependency>
+   	<!--<dependency>
    		<groupId>com.obsqura</groupId>
    		<artifactId>ASSIGNMENT_JAVA</artifactId>
    		<version>0.0.1-SNAPSHOT</version>
-   	</dependency>
+   	</dependency>-->
    </dependencies>
 </project>

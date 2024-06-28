@@ -1,5 +1,7 @@
 package constants;
 
+import java.io.File;
+
 public class Constants 
 {
 	public static final String TESTDATA_EXCELPATH="\\src\\main\\resources\\TestData.xlsx";
@@ -13,5 +15,5 @@ public static final String USERNAME_EXTENSION="00";
 public static final String PASSWORD_EXTENSION="11";
 public static final String MAIL_EXTENSION="@gmail.com";
 public static final String INSERT_SPACE=" ";
-
+public static final String CONFIG_FILE=System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"resources"+File.separator+"config.properties";
 }
