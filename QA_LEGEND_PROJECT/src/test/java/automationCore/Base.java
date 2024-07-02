@@ -63,9 +63,10 @@ public class Base
 		WaitUtility.waitUsingImplicitWait(driver);
 	}
 	@BeforeMethod(alwaysRun=true)
-	public void setUp()
+	@Parameters("browser")
+	public void setUp(String browsername)
 	{
-		initialiseBrowser("Chrome");
+		initialiseBrowser(browsername);
 	}
 @AfterMethod(alwaysRun=true)
 	public void closeBrowser(ITestResult result) throws IOException
