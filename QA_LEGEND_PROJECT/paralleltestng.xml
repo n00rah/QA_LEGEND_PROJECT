@@ -15,7 +15,7 @@
 		</classes>
 	</test> <!--
 	Test -->
-	<test name="AddUserPageTest">
+	<test name="UsersPageTest">
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="test.AddUserPageTest" />

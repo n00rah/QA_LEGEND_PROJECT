@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import constants.Constants;
 import utilities.ExcelUtility;
 import utilities.WaitUtility;
 
@@ -122,7 +123,7 @@ public class UsersPage
 	}
 	public void enterNewLastName()
 	{
-		lastNameField.sendKeys(ExcelUtility.getStringData(1,1,"UsersPage"));
+		lastNameField.sendKeys(ExcelUtility.getStringData(1,1,Constants.USERS_PAGE));
 	}
 	public String getPageHeading()
 	{
