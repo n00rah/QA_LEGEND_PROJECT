@@ -7,7 +7,11 @@
   <test name="Jenkins Test">
 	<parameter name="browser" value="Chrome"></parameter>
 	<classes>
-			<class name="test.PageTest" />
+			<class name="test.ProfilePageTest" />
+			<class name="test.LoginPageTest" />
+			<class name="test.UsersPageTest" />
+			<class name="test.HomePageTest" />
+			
 		</classes>
 		</test> <!--
 	Test -->   
