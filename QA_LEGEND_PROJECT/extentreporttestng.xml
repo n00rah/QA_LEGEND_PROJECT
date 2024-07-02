@@ -9,7 +9,13 @@
   <test name="Test Report">
 	<parameter name="browser" value="Chrome"></parameter> 
     <classes>
-      <class name="test.UsersPageTest"/>
+      <class name="test.ProfilePageTest" />
+			<class name="test.AddUserPageTest" />
+			<class name="test.ResetPageTest" />
+			<class name="test.UserManagementPageTest" />
+		    <class name="test.HomePageTest" />
+			<class name="test.LoginPageTest" />
+			<class name="test.UsersPageTest" />	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
