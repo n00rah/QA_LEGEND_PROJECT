@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="listener.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="Jenkins Test(failed)">
+  <test thread-count="5" name="Functional Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="test.ProfilePageTest">
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- test.ProfilePageTest -->
     </classes>
-  </test> <!-- Jenkins Test(failed) -->
+  </test> <!-- Functional Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
