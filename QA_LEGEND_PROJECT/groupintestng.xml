@@ -9,7 +9,7 @@
 		</run>
 	</groups>
 	<listeners>
-		<listener class-name="listeners.AnnotationTransformer"></listener>
+		<listener class-name="listener.AnnotationTransformer"></listener>
 	</listeners>
 	<test name="All Test Cases">
 		<parameter name="browser" value="Chrome"></parameter>

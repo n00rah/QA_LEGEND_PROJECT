@@ -1,136 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="4" failed="2" skipped="1">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-28T11:05:35 IST" name="Suite" finished-at="2024-06-28T11:06:42 IST" duration-ms="66929">
+  <suite started-at="2024-07-02T11:52:13 IST" name="Suite" finished-at="2024-07-02T11:52:20 IST" duration-ms="7343">
     <groups>
-      <group name="Sanity">
-        <method signature="LoginPageTest.verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6]" name="verifyErrorMsgWhileLoginWithInvalidCredentials" class="test.LoginPageTest"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:test.LoginPageTest@293a5bf6]" name="verifyLoginWithValidCredentials" class="test.LoginPageTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-06-28T11:05:35 IST" name="AddUserPageTest" finished-at="2024-06-28T11:05:59 IST" duration-ms="23847">
-      <class name="test.AddUserPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:35 IST" name="setUp" finished-at="2024-06-28T11:05:57 IST" duration-ms="21649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyAddUser()[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:57 IST" name="verifyAddUser" finished-at="2024-06-28T11:05:59 IST" duration-ms="2077" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2e0d15cc, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -> id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a]]>
-            </message>
+    <test started-at="2024-07-02T11:52:13 IST" name="Test Report" finished-at="2024-07-02T11:52:20 IST" duration-ms="7343">
+      <class name="test.UsersPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:13 IST" name="setUp" finished-at="2024-07-02T11:52:16 IST" duration-ms="2638" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2e0d15cc, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -> id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at page_object.LoginPage.enterUserName(LoginPage.java:29)
-at test.AddUserPageTest.verifyAddUser(AddUserPageTest.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddUser -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:59 IST" name="closeBrowser" finished-at="2024-06-28T11:05:59 IST" duration-ms="12" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddUser status=FAILURE method=AddUserPageTest.verifyAddUser()[pri:0, instance:test.AddUserPageTest@217ed35e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
-at automationCore.Base.takeScreenShot(Base.java:62)
-at automationCore.Base.closeBrowser(Base.java:55)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,8 +27,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTi
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
@@ -152,58 +38,35 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:59 IST" name="setUp" finished-at="2024-06-28T11:05:59 IST" duration-ms="0" status="SKIP">
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserLoginWithNewlyaddeduser()[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:59 IST" name="verifyUserLoginWithNewlyaddeduser" finished-at="2024-06-28T11:05:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a]]>
-            </message>
+        <test-method signature="verifyDeleteFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:16 IST" name="verifyDeleteFunctionality" finished-at="2024-07-02T11:52:16 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
-at automationCore.Base.takeScreenShot(Base.java:62)
-at automationCore.Base.closeBrowser(Base.java:55)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,8 +76,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTi
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
@@ -225,144 +87,46 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginWithNewlyaddeduser -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.AddUserPageTest@217ed35e]" started-at="2024-06-28T11:05:59 IST" name="closeBrowser" finished-at="2024-06-28T11:05:59 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- test.AddUserPageTest -->
-    </test> <!-- AddUserPageTest -->
-    <test started-at="2024-06-28T11:05:35 IST" name="HomePageTest" finished-at="2024-06-28T11:05:59 IST" duration-ms="23835">
-      <class name="test.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HomePageTest@5aa9e4eb]" started-at="2024-06-28T11:05:35 IST" name="setUp" finished-at="2024-06-28T11:05:57 IST" duration-ms="21648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUserLoginDate()[pri:0, instance:test.HomePageTest@5aa9e4eb]" started-at="2024-06-28T11:05:57 IST" name="verifyUserLoginDate" finished-at="2024-06-28T11:05:59 IST" duration-ms="2077" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2fc51d9c, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -> id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2fc51d9c, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -> id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at page_object.LoginPage.enterUserName(LoginPage.java:29)
-at test.HomePageTest.verifyUserLoginDate(HomePageTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLoginDate -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.HomePageTest@5aa9e4eb]" started-at="2024-06-28T11:05:59 IST" name="closeBrowser" finished-at="2024-06-28T11:05:59 IST" duration-ms="13" status="FAIL">
+        </test-method> <!-- verifyDeleteFunctionality -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:16 IST" name="closeBrowser" finished-at="2024-07-02T11:52:16 IST" duration-ms="146" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserLoginDate status=FAILURE method=HomePageTest.verifyUserLoginDate()[pri:0, instance:test.HomePageTest@5aa9e4eb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDeleteFunctionality status=SKIP method=UsersPageTest.verifyDeleteFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a]]>
-            </message>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:16 IST" name="setUp" finished-at="2024-07-02T11:52:18 IST" duration-ms="2137" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
-at automationCore.Base.takeScreenShot(Base.java:62)
-at automationCore.Base.closeBrowser(Base.java:55)
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -372,8 +136,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTi
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
 at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
@@ -384,135 +147,194 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:819)
 at org.testng.TestRunner.run(TestRunner.java:619)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- test.HomePageTest -->
-    </test> <!-- HomePageTest -->
-    <test started-at="2024-06-28T11:05:35 IST" name="LoginPageTest" finished-at="2024-06-28T11:06:42 IST" duration-ms="66929">
-      <class name="test.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:05:35 IST" name="setUp" finished-at="2024-06-28T11:05:57 IST" duration-ms="21645" status="PASS">
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:05:57 IST" name="verifyErrorMsgWhileLoginWithInvalidCredentials" data-provider="InvalidLogincredentials" finished-at="2024-06-28T11:05:59 IST" duration-ms="1804" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyEditFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:18 IST" name="verifyEditFunctionality" finished-at="2024-07-02T11:52:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:05:59 IST" name="closeBrowser" finished-at="2024-06-28T11:05:59 IST" duration-ms="126" status="PASS">
+        </test-method> <!-- verifyEditFunctionality -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:18 IST" name="closeBrowser" finished-at="2024-07-02T11:52:18 IST" duration-ms="129" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyEditFunctionality status=SKIP method=UsersPageTest.verifyEditFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:05:59 IST" name="setUp" finished-at="2024-06-28T11:06:10 IST" duration-ms="10755" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:18 IST" name="setUp" finished-at="2024-07-02T11:52:20 IST" duration-ms="1943" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:10 IST" name="verifyErrorMsgWhileLoginWithInvalidCredentials" data-provider="InvalidLogincredentials" finished-at="2024-06-28T11:06:11 IST" duration-ms="979" status="PASS">
+        <test-method signature="verifyViewFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:20 IST" name="verifyViewFunctionality" finished-at="2024-07-02T11:52:20 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1105)
+at java.base/java.util.Map.of(Map.java:1353)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+at automationCore.Base.initialiseBrowser(Base.java:61)
+at automationCore.Base.setUp(Base.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:578)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewFunctionality -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.UsersPageTest@5403f35f]" started-at="2024-07-02T11:52:20 IST" name="closeBrowser" finished-at="2024-07-02T11:52:20 IST" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:11 IST" name="closeBrowser" finished-at="2024-06-28T11:06:11 IST" duration-ms="287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:11 IST" name="setUp" finished-at="2024-06-28T11:06:25 IST" duration-ms="13888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:25 IST" name="verifyErrorMsgWhileLoginWithInvalidCredentials" data-provider="InvalidLogincredentials" finished-at="2024-06-28T11:06:26 IST" duration-ms="1252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admi]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:26 IST" name="closeBrowser" finished-at="2024-06-28T11:06:26 IST" duration-ms="188" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyErrorMsgWhileLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:test.LoginPageTest@293a5bf6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:26 IST" name="setUp" finished-at="2024-06-28T11:06:37 IST" duration-ms="11154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:37 IST" name="verifyLoginWithValidCredentials" finished-at="2024-06-28T11:06:42 IST" duration-ms="4436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginPageTest@293a5bf6]" started-at="2024-06-28T11:06:42 IST" name="closeBrowser" finished-at="2024-06-28T11:06:42 IST" duration-ms="308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWithValidCredentials()[pri:0, instance:test.LoginPageTest@293a5bf6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyViewFunctionality status=SKIP method=UsersPageTest.verifyViewFunctionality()[pri:0, instance:test.UsersPageTest@5403f35f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- test.LoginPageTest -->
-    </test> <!-- LoginPageTest -->
+      </class> <!-- test.UsersPageTest -->
+    </test> <!-- Test Report -->
   </suite> <!-- Suite -->
 </testng-results>

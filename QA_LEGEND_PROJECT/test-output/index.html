@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\NOORA\git\QA_LEGEND_PROJECT\QA_LEGEND_PROJECT\paralleltestng.xml</span>
+                    <span>C:\Users\NOORA\git\QA_LEGEND_PROJECT\QA_LEGEND_PROJECT\extentreporttestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,  1 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.AddUserPageTest" class="method navigator-link" hash-for-method="verifyAddUser">verifyAddUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.HomePageTest" class="method navigator-link" hash-for-method="verifyUserLoginDate">verifyUserLoginDate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -122,39 +103,20 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.AddUserPageTest" class="method navigator-link" hash-for-method="verifyUserLoginWithNewlyaddeduser">verifyUserLoginWithNewlyaddeduser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.UsersPageTest" class="method navigator-link" hash-for-method="verifyDeleteFunctionality">verifyDeleteFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.UsersPageTest" class="method navigator-link" hash-for-method="verifyEditFunctionality">verifyEditFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.UsersPageTest" class="method navigator-link" hash-for-method="verifyViewFunctionality">verifyViewFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.LoginPageTest" class="method navigator-link" hash-for-method="verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 1234)">verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.LoginPageTest" class="method navigator-link" hash-for-method="verifyErrorMsgWhileLoginWithInvalidCredentials(admin, 1234)">verifyErrorMsgWhileLoginWithInvalidCredentials(admin, 1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.LoginPageTest" class="method navigator-link" hash-for-method="verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 123456)">verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 123456)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -166,200 +128,87 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserLoginDate">
-                  </a> <!-- verifyUserLoginDate -->
-                  <span class="method-name">verifyUserLoginDate</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2fc51d9c, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -&gt; id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at page_object.LoginPage.enterUserName(LoginPage.java:29)
-	at test.HomePageTest.verifyUserLoginDate(HomePageTest.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.AddUserPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddUser">
-                  </a> <!-- verifyAddUser -->
-                  <span class="method-name">verifyAddUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, sendKeysToElement {value=[Ljava.lang.CharSequence;@2e0d15cc, id=f.3CE4EB3495265EC0C4D181B31BD5BF77.d.5B8F082FD07CE6EC24B92BE16BB14E8D.e.26}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9a01894e4167378b7cd00086ee67883a)] -&gt; id: username]
-Session ID: 9a01894e4167378b7cd00086ee67883a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at page_object.LoginPage.enterUserName(LoginPage.java:29)
-	at test.AddUserPageTest.verifyAddUser(AddUserPageTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">test.AddUserPageTest</span>
+              <span class="class-name">test.UsersPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserLoginWithNewlyaddeduser">
-                  </a> <!-- verifyUserLoginWithNewlyaddeduser -->
-                  <span class="method-name">verifyUserLoginWithNewlyaddeduser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9a01894e4167378b7cd00086ee67883a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\NOORA\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55216/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a01894e4167378b7cd00086ee67883a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
-	at automationCore.Base.takeScreenShot(Base.java:62)
-	at automationCore.Base.closeBrowser(Base.java:55)
+                  <a name="verifyDeleteFunctionality">
+                  </a> <!-- verifyDeleteFunctionality -->
+                  <span class="method-name">verifyDeleteFunctionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at automationCore.Base.initialiseBrowser(Base.java:61)
+	at automationCore.Base.setUp(Base.java:68)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 27 stack frames
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditFunctionality">
+                  </a> <!-- verifyEditFunctionality -->
+                  <span class="method-name">verifyEditFunctionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at automationCore.Base.initialiseBrowser(Base.java:61)
+	at automationCore.Base.setUp(Base.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewFunctionality">
+                  </a> <!-- verifyViewFunctionality -->
+                  <span class="method-name">verifyViewFunctionality</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at automationCore.Base.initialiseBrowser(Base.java:61)
+	at automationCore.Base.setUp(Base.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 1234)">
-                  </a> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 1234) -->
-                  <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials</span>
-                  <span class="parameters">(admi,1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyErrorMsgWhileLoginWithInvalidCredentials(admin, 1234)">
-                  </a> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials(admin, 1234) -->
-                  <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials</span>
-                  <span class="parameters">(admin,1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 123456)">
-                  </a> <!-- verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 123456) -->
-                  <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials</span>
-                  <span class="parameters">(admi,123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithValidCredentials">
-                  </a> <!-- verifyLoginWithValidCredentials -->
-                  <span class="method-name">verifyLoginWithValidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\NOORA\git\QA_LEGEND_PROJECT\QA_LEGEND_PROJECT\paralleltestng.xml</span>
+            <span class="header-content">C:\Users\NOORA\git\QA_LEGEND_PROJECT\QA_LEGEND_PROJECT\extentreporttestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;LoginPageTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listener.ExtentListeners&quot;/&gt;
+    &lt;listener class-name=&quot;listener.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Report&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;test.UsersPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginPageTest --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;HomePageTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;test.HomePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HomePageTest --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;AddUserPageTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;test.AddUserPageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- AddUserPageTest --&gt;
+  &lt;/test&gt; &lt;!-- Test Report --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -371,13 +220,7 @@ Session ID: 9a01894e4167378b7cd00086ee67883a
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginPageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">HomePageTest (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">AddUserPageTest (1 class)</span>
+                <span class="test-name">Test Report (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -387,22 +230,6 @@ Session ID: 9a01894e4167378b7cd00086ee67883a
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyLoginWithValidCredentials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyErrorMsgWhileLoginWithInvalidCredentials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -419,40 +246,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginWithValidCredentials')
-data.setCell(0, 2, 'test.LoginPageTest')
-data.setCell(0, 3, 4436);
+data.setCell(0, 1, 'verifyEditFunctionality')
+data.setCell(0, 2, 'test.UsersPageTest')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddUser')
-data.setCell(1, 2, 'test.AddUserPageTest')
-data.setCell(1, 3, 2077);
+data.setCell(1, 1, 'verifyViewFunctionality')
+data.setCell(1, 2, 'test.UsersPageTest')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyUserLoginDate')
-data.setCell(2, 2, 'test.HomePageTest')
-data.setCell(2, 3, 2077);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyErrorMsgWhileLoginWithInvalidCredentials')
-data.setCell(3, 2, 'test.LoginPageTest')
-data.setCell(3, 3, 1804);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyErrorMsgWhileLoginWithInvalidCredentials')
-data.setCell(4, 2, 'test.LoginPageTest')
-data.setCell(4, 3, 1252);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyErrorMsgWhileLoginWithInvalidCredentials')
-data.setCell(5, 2, 'test.LoginPageTest')
-data.setCell(5, 3, 979);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyUserLoginWithNewlyaddeduser')
-data.setCell(6, 2, 'test.AddUserPageTest')
-data.setCell(6, 3, 0);
+data.setCell(2, 1, 'verifyDeleteFunctionality')
+data.setCell(2, 2, 'test.UsersPageTest')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -478,118 +289,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.AddUserPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.UsersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=verifyDeleteFunctionality status=SKIP method=UsersPageTest.verifyDeleteFunctionalit...)</span>
+                <span class="method-start">2686 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">4 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials(admin, 1234)</span>
-                <span class="method-start">21651 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyUserLoginDate</span>
-                <span class="method-start">21651 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.AddUserPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser([TestResult name=verifyEditFunctionality status=SKIP method=UsersPageTest.verifyEditFunctionality()[...)</span>
+                <span class="method-start">5017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyAddUser</span>
-                <span class="method-start">21651 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest....)</span>
-                <span class="method-start">23460 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">23588 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeBrowser([TestResult name=verifyUserLoginDate status=FAILURE method=HomePageTest.verifyUserLoginDate()[pri:0,...)</span>
-                <span class="method-start">23734 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.AddUserPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">closeBrowser([TestResult name=verifyAddUser status=FAILURE method=AddUserPageTest.verifyAddUser()[pri:0, instance...)</span>
-                <span class="method-start">23738 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">23754 ms</span>
+                <span class="method-start">5148 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">23766 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 123456)</span>
-                <span class="method-start">34343 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest....)</span>
-                <span class="method-start">35322 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">35610 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorMsgWhileLoginWithInvalidCredentials(admi, 1234)</span>
-                <span class="method-start">49499 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyErrorMsgWhileLoginWithInvalidCredentials status=SUCCESS method=LoginPageTest....)</span>
-                <span class="method-start">50752 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">50949 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginWithValidCredentials</span>
-                <span class="method-start">62104 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser([TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginPageTest.verifyLoginWith...)</span>
-                <span class="method-start">66541 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyViewFunctionality status=SKIP method=UsersPageTest.verifyViewFunctionality()[...)</span>
+                <span class="method-start">7103 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

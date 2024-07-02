@@ -62,12 +62,12 @@ public class Base
 		driver.manage().window().maximize();
 		WaitUtility.waitUsingImplicitWait(driver);
 	}
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void setUp()
 	{
 		initialiseBrowser("Chrome");
 	}
-@AfterMethod
+@AfterMethod(alwaysRun=true)
 	public void closeBrowser(ITestResult result) throws IOException
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
