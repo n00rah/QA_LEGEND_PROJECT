@@ -20,4 +20,22 @@
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listener.AnnotationTransformer"></listener>
+	</listeners>
+  <test name="Jenkins Test">
+	<parameter name="browser" value="Chrome"></parameter>
+	<classes>
+			<class name="test.ProfilePageTest" />
+			<class name="test.AddUserPageTest" />
+			<class name="test.ResetPageTest" />
+			<class name="test.UserManagementPageTest" />
+		    <class name="test.HomePageTest" />
+			<class name="test.LoginPageTest" />
+			<class name="test.UsersPageTest" />	
+		</classes>
+		</test> <!--
+	Test -->   
+</suite> <!-- Suite -->
 
