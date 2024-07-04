@@ -35,9 +35,9 @@ public class ProfilePageTest extends Base
 		profile.enterLastName(lastName);
 		profile.clickOnUpdateButton();
 		
-		//String actualUserName=home.getUserNameText();
-		//String expectedUserName=firstName+Constants.INSERT_SPACE+lastName;
-		//Assert.assertEquals(actualUserName, expectedUserName,Messages.PROFILE_UPDATION_FAILED);
+		String actualUserName=home.getUserNameText();
+		String expectedUserName=firstName+Constants.INSERT_SPACE+lastName;
+		Assert.assertEquals(actualUserName, expectedUserName,Messages.PROFILE_UPDATION_FAILED);
 				
 	}
 
