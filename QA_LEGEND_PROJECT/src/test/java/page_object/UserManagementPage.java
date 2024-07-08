@@ -30,17 +30,17 @@ public void cliclOnUsersTab()
 }
 public boolean verifyUsersTabIsEnabled()
 {
-	return WebElementUtility.verifyisEnabled(usersTab);
+	return WebElementUtility.isElementEnabled(usersTab);
 
 }
 public boolean verifyRolesTabIsEnabled()
 {
-	return WebElementUtility.verifyisEnabled(rolesTab);
+	return WebElementUtility.isElementEnabled(rolesTab);
 	
 }
 public boolean verifySalesCommisionAgentsTabIsEnabled()
 {
-	return WebElementUtility.verifyisEnabled(salesCommissionAgentsTab);
+	return WebElementUtility.isElementEnabled(salesCommissionAgentsTab);
 	
 }
 

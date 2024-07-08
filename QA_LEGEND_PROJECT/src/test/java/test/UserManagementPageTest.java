@@ -21,11 +21,9 @@ public class UserManagementPageTest extends Base
 	LoginPage login=new LoginPage(driver);
 	login.enterUserName(ExcelUtility.getStringData(1,0,Constants.ADDUSER_PAGE));
 	login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.ADDUSER_PAGE));
-	login.clickOnLoginButton();
-	HomePage home=new HomePage(driver);
+	HomePage home=login.clickOnLoginButton();
 	home.clickOnEndTourButton();
-	home.clickOnUserManagement();
-	UserManagementPage usermanagement=new UserManagementPage(driver);
+	UserManagementPage usermanagement=home.clickOnUserManagement();
 	boolean status=usermanagement.verifyUsersTabIsEnabled();
 	Assert.assertTrue(status,Messages.USERS_DISABLED);
 	}
@@ -35,8 +33,7 @@ public class UserManagementPageTest extends Base
 	LoginPage login=new LoginPage(driver);
 	login.enterUserName(ExcelUtility.getStringData(1,0,Constants.ADDUSER_PAGE));
 	login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.ADDUSER_PAGE));
-	login.clickOnLoginButton();
-	HomePage home=new HomePage(driver);
+	HomePage home=login.clickOnLoginButton();
 	home.clickOnEndTourButton();
 	UserManagementPage usermanagement=home.clickOnUserManagement();
 	boolean status=usermanagement.verifyRolesTabIsEnabled();
@@ -50,11 +47,9 @@ public class UserManagementPageTest extends Base
 	LoginPage login=new LoginPage(driver);
 	login.enterUserName(ExcelUtility.getStringData(1,0,Constants.ADDUSER_PAGE));
 	login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.ADDUSER_PAGE));
-	login.clickOnLoginButton();
-	HomePage home=new HomePage(driver);
+	HomePage home=login.clickOnLoginButton();
 	home.clickOnEndTourButton();
-	home.clickOnUserManagement();
-	UserManagementPage usermanagement=new UserManagementPage(driver);
+	UserManagementPage usermanagement=home.clickOnUserManagement();
 	boolean status=usermanagement.verifySalesCommisionAgentsTabIsEnabled();
 	Assert.assertTrue(status,Messages.SALESCOMMISSION_DISABLED);
 }

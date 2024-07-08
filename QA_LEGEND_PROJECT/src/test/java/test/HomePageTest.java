@@ -25,8 +25,6 @@ public void verifyUserLoginDate()
 	home.clickOnEndTourButton();
 	String homePageDate=home.getLoginDate();
 	String currentDate=home.getCurrentDate();
-	Assert.assertEquals(homePageDate, currentDate,Messages.DATE_MISMATCH);
-	
-	
+	Assert.assertEquals(homePageDate, currentDate,Messages.DATE_MISMATCH);	
 }
 }

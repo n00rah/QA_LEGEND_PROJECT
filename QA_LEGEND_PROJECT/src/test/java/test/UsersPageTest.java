@@ -25,8 +25,7 @@ public class UsersPageTest extends Base
 		HomePage home=login.clickOnLoginButton();
 		home.clickOnEndTourButton();
 		home.clickOnUserManagement();
-		home.clickOnUsers();
-		UsersPage user=new UsersPage(driver);
+		UsersPage user=home.clickOnUsers();
 		user.enterSearchData(ExcelUtility.getStringData(1,0,Constants.USERS_PAGE));
 		user.clickOnViewButton();
 		String actualProfileName=user.getProfileName();
@@ -67,16 +66,11 @@ public class UsersPageTest extends Base
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.ADDUSER_PAGE));
 		login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.ADDUSER_PAGE));
-		login.clickOnLoginButton();
-		HomePage home=new HomePage(driver);
+		HomePage home=login.clickOnLoginButton();
 		home.clickOnEndTourButton();
 		home.clickOnUserManagement();
-		home.clickOnUsers();
-		
-		UsersPage user=new UsersPage(driver);
-		user.clickOnAddButton();
-		
-		AddUserPage adduser=new AddUserPage(driver);
+		UsersPage user=home.clickOnUsers();
+		AddUserPage adduser=user.clickOnAddButton();
 		adduser.enterPrefix(prefix);
 		adduser.enterFirstName(firstName);
 		adduser.enterLastName(lastName);

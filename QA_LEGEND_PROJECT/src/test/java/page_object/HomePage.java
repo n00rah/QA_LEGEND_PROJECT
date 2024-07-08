@@ -43,9 +43,10 @@ public class HomePage
 	{
 		endTourButton.click();
 	}
-	public void clickOnProfileTab()
+	public ProfilePage clickOnProfileTab()
 	{
 		profileTab.click();
+		return new ProfilePage(driver);
 	}
 	
 	public String getUserNameText()

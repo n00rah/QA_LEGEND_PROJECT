@@ -60,8 +60,7 @@ public class UsersPage
 		WaitUtility.waitForElement(driver, searchResult);
 		String expectedemail=searchResult.getText();
 		System.out.println(expectedemail);
-		return expectedemail;
-		
+		return expectedemail;	
 	}
 	public AddUserPage clickOnEditButton()
 	{

@@ -43,8 +43,7 @@ public class ResetPageTest extends Base
 	public void verifyPasswordResetwithValidEmailId()
 	{
 		LoginPage login=new LoginPage(driver);
-		ResetPage reset=new ResetPage(driver);
-		login.clickOnforgotPassword();
+		ResetPage reset=login.clickOnforgotPassword();
 		String emailid=ExcelUtility.getStringData(1,3,Constants.RESET_PAGE);
 		reset.enterEmailAddress(emailid);
 		reset.clickOnPasswordResetLink();

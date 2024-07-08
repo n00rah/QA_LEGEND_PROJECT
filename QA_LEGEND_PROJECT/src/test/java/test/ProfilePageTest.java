@@ -27,9 +27,7 @@ public class ProfilePageTest extends Base
 		
 		HomePage home=login.clickOnLoginButton();
 		home.clickOnEndTourButton();
-		home.clickOnProfileTab();
-		
-		ProfilePage profile=new ProfilePage(driver);
+		ProfilePage profile=home.clickOnProfileTab();
 		profile.clickOnProfileTab();
 		profile.clearLastNameField();
 		profile.enterLastName(lastName);

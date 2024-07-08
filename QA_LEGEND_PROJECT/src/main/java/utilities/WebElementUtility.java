@@ -5,17 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class WebElementUtility {
-	public static boolean verifyisEnabled(WebElement element) {
+	public static boolean isElementEnabled(WebElement element) {
 		boolean status = element.isEnabled();
 		return status;
 	}
 
-	public static boolean verifyisSelected(WebElement element) {
+	public static boolean isElementSelected(WebElement element) {
 		boolean status = element.isSelected();
 		return status;
 	}
 
-	public static boolean verifyisDisplayed(WebElement element) {
+	public static boolean isElementDisplayed(WebElement element) {
 		boolean status = element.isDisplayed();
 		return status;
 	}

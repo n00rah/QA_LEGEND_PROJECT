@@ -30,14 +30,11 @@ public class AddUserPageTest extends Base
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
 		login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.LOGIN_PAGE));
-		login.clickOnLoginButton();
-		HomePage home=new HomePage(driver);
+		HomePage home=login.clickOnLoginButton();
 		home.clickOnEndTourButton();
 		home.clickOnUserManagement();
-		home.clickOnUsers();
-		UsersPage users=new UsersPage(driver);
-		users.clickOnAddButton();
-		AddUserPage adduser=new AddUserPage(driver);
+		UsersPage users=home.clickOnUsers();
+		AddUserPage adduser=users.clickOnAddButton();
 		adduser.enterPrefix(prefix);
 		adduser.enterFirstName(firstName);
 		adduser.enterLastName(lastName);
@@ -68,16 +65,11 @@ public class AddUserPageTest extends Base
 		LoginPage login=new LoginPage(driver);
 		login.enterUserName(ExcelUtility.getStringData(1,0,Constants.LOGIN_PAGE));
 		login.enterPassWord(ExcelUtility.getIntegerData(1,1,Constants.LOGIN_PAGE));
-		login.clickOnLoginButton();
-		HomePage home=new HomePage(driver);
+		HomePage home=login.clickOnLoginButton();
 		home.clickOnEndTourButton();
 		home.clickOnUserManagement();
-		home.clickOnUsers();
-		
-		UsersPage users=new UsersPage(driver);
-		users.clickOnAddButton();
-		
-		AddUserPage adduser=new AddUserPage(driver);
+		UsersPage users=home.clickOnUsers();
+		AddUserPage adduser=users.clickOnAddButton();
 		adduser.enterPrefix(prefix);
 		adduser.enterFirstName(firstName);
 		adduser.enterLastName(lastName);
