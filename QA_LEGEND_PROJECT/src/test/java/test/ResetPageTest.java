@@ -16,8 +16,7 @@ public class ResetPageTest extends Base
 	public void verifyResetPageTitle()
 	{
 		LoginPage login=new LoginPage(driver);
-		ResetPage reset=new ResetPage(driver);
-		login.clickOnforgotPassword();
+		ResetPage reset=login.clickOnforgotPassword();
 		String actualtitle=reset.resetPageTitle();
 		System.out.println(actualtitle);
 		String expectedtitle=ExcelUtility.getStringData(1,0,Constants.RESET_PAGE);
@@ -29,8 +28,7 @@ public class ResetPageTest extends Base
 	public void verifyErrorMessageWithInvalidEmailId()
 	{
 		LoginPage login=new LoginPage(driver);
-		ResetPage reset=new ResetPage(driver);
-		login.clickOnforgotPassword();
+		ResetPage reset=login.clickOnforgotPassword();
 		String emailid=ExcelUtility.getStringData(1,1,Constants.RESET_PAGE);
 		reset.enterEmailAddress(emailid);
 		reset.clickOnPasswordResetLink();

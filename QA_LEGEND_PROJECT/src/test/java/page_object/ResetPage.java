@@ -46,7 +46,6 @@ public class ResetPage
 	public String validEmailAlertMessage()
 	{
 		String alertmsg=alertMessage.getText();
-		//System.out.println(alertmsg);
 		return alertmsg;
 	}
 }

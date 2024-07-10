@@ -25,7 +25,7 @@ public class ExtentManager
         return extent;
     }
 
-    //Create an extent report instance
+                                                                                                                                                //Create an extent report instance
     public static ExtentReports createInstance() {
         platform = getCurrentPlatform();
         String fileName = getReportFileLocation(platform);
@@ -43,7 +43,7 @@ public class ExtentManager
         return extent;
     }
 
-    //Select the extent report file location based on platform
+                                                                                                                                            //Select the extent report file location based on platform
     private static String getReportFileLocation(Platform platform) {
         String reportFileLocation = null;
         switch (platform) {
@@ -64,7 +64,7 @@ public class ExtentManager
         return reportFileLocation;
     }
 
-    //Create the report path if it does not exist
+                                                                                                                                               //Create the report path if it does not exist
     private static void createReportPath(String path) {
         File testDirectory = new File(path);
         if (!testDirectory.exists()) {
@@ -78,7 +78,7 @@ public class ExtentManager
         }
     }
 
-    //Get current platform
+                                                                                                                                            //Get current platform
     private static Platform getCurrentPlatform() {
         if (platform == null) {
             String operSys = System.getProperty("os.name").toLowerCase();
