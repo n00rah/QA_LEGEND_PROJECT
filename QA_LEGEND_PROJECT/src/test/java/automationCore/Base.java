@@ -57,7 +57,8 @@ public class Base
 		{
 			throw new RuntimeException("Invalid Browser");
 		}
-		driver.get(prop.getProperty(browser));
+		//driver.get(prop.getProperty(browser));
+		driver.get("https://qalegend.com/billing/public/login");
 		driver.manage().window().maximize();
 		WaitUtility.waitUsingImplicitWait(driver);
 	}
@@ -94,4 +95,12 @@ public class Base
 
 
 
-//driver.get("https://qalegend.com/billing/public/login");
+
+
+
+
+
+
+
+
+

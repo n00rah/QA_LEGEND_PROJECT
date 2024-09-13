@@ -8,94 +8,82 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.ExcelUtility;
 import utilities.PageUtility;
 
-public class AddUserPage 
-{
+public class AddUserPage {
 	WebDriver driver;
-	public AddUserPage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+
+	public AddUserPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	@FindBy(id="surname")
+
+	@FindBy(id = "surname")
 	WebElement prefixField;
-	@FindBy(xpath="//input[@id='first_name']")
+	@FindBy(xpath = "//input[@id='first_name']")
 	WebElement firstNameField;
-	@FindBy(id="last_name")
+	@FindBy(id = "last_name")
 	WebElement lastNameField;
-	@FindBy(id="email")
+	@FindBy(id = "email")
 	WebElement emailIdField;
-	@FindBy(xpath="//select[@class='form-control select2 select2-hidden-accessible' and @id='role']")
+	@FindBy(xpath = "//select[@class='form-control select2 select2-hidden-accessible' and @id='role']")
 	WebElement roleSelectionField;
-	@FindBy(id="username")
+	@FindBy(id = "username")
 	WebElement userNameField;
-	@FindBy(id="password")
+	@FindBy(id = "password")
 	WebElement passwordField;
-	@FindBy(xpath="//input[@name='confirm_password']")
+	@FindBy(xpath = "//input[@name='confirm_password']")
 	WebElement confirmPasswordField;
-	@FindBy(id="cmmsn_percent")
+	@FindBy(id = "cmmsn_percent")
 	WebElement salesCommisionField;
-	@FindBy(id="submit_user_button")
+	@FindBy(id = "submit_user_button")
 	WebElement saveButton;
-	
-	
-	public void enterPrefix(String prefix)
-	{
+
+	public void enterPrefix(String prefix) {
 		prefixField.sendKeys(prefix);
 	}
-	public void enterFirstName(String firstName)
-	{
+
+	public void enterFirstName(String firstName) {
 		firstNameField.sendKeys(firstName);
-		
 	}
-	
-	public void enterLastName(String lastName)
-	{
+
+	public void enterLastName(String lastName) {
 		lastNameField.sendKeys(lastName);
-		
+
 	}
-	
-	public void enterEmail(String emailId)
-	{
+
+	public void enterEmail(String emailId) {
 		emailIdField.sendKeys(emailId);
 	}
-	
-	public void getSelectRole()
-	{
-		PageUtility.selectByVisibleText(roleSelectionField,"Specialist");
+
+	public void getSelectRole() {
+		PageUtility.selectByVisibleText(roleSelectionField, "Specialist");
 	}
-	
-	public void enterUserName(String userName)
-	{
+
+	public void enterUserName(String userName) {
 		userNameField.sendKeys(userName);
 	}
-	
-	public void enterPassword(String password)
-	{
+
+	public void enterPassword(String password) {
 		passwordField.sendKeys(password);
 	}
-	
-	public void enterConfirmPassword(String password)
-	{
+
+	public void enterConfirmPassword(String password) {
 		confirmPasswordField.sendKeys(password);
 	}
-	
-	public void enterSalesCommissionPercent()
-	{
-		salesCommisionField.sendKeys(ExcelUtility.getIntegerData(1,2,"AddUserPage"));
+
+	public void enterSalesCommissionPercent() {
+		salesCommisionField.sendKeys(ExcelUtility.getIntegerData(1, 2, "AddUserPage"));
 	}
-	
-	public void clickOnSaveButton()
-	{
+
+	public void clickOnSaveButton() {
 		saveButton.click();
 	}
-	public void clearSalesCommisiionField()
-	{
+
+	public void clearSalesCommisiionField() {
 		salesCommisionField.clear();
 	}
-	public void enterNewSalesCommissionPercentage()
-	{
-		salesCommisionField.sendKeys(ExcelUtility.getIntegerData(1,3,"UsersPage"));
+
+	public void enterNewSalesCommissionPercentage() {
+		salesCommisionField.sendKeys(ExcelUtility.getIntegerData(1, 3, "UsersPage"));
 	}
-	
 
 }
